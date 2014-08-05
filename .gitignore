@@ -22,3 +22,10 @@
 
 # project .user files
 *.user*
+
+# Cmake auto-generated files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
