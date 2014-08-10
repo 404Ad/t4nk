@@ -30,43 +30,6 @@ public:
 
 };
 
-class Tank : public MoveParameters
-{
-public:
-    Tank(int xpos, int ypos, int tankSpeed, Direction direction = Up)
-    {
-        x = xpos;
-        y = ypos;
-        dir = direction;
-        speed = tankSpeed;
-    }
-
-    void setSpeed(int pixelsPerFrame)
-    {
-        speed = pixelsPerFrame;
-    }
-
-    void moveUp()
-    {
-        y -= speed; //for example 3 pixels per frame
-    }
-
-    void moveDown()
-    {
-        y += speed;
-    }
-
-    void moveLeft()
-    {
-        x -= speed;
-    }
-
-    void moveRight()
-    {
-        x += speed;
-    }
-};
-
 int main()
 {
     Game game;
